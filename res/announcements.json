@@ -1,0 +1,49 @@
+{
+  "announcements": [
+    {
+      "id": "weekly-maintenance",
+      "title": "Weekly Maintenance",
+      "summary": "The CBHS Minecraft Server goes down briefly once a week for updates and backups.",
+      "body": "Every Saturday at around 1:00 AM, the CBHS Minecraft Server will be briefly offline for routine maintenance. Expected downtime is about 30 minutes. Please finish any major activities before then.",
+      "pinned": true,
+      "level": "warning",
+      "showOnHomeModal": false,
+      "weekly": {
+        "weekday": 6,
+        "hour": 1,
+        "minute": 0,
+        "windowMinutes": 240
+      }
+    },
+    {
+      "id": "season-1-launch",
+      "title": "Season 1 Launch",
+      "summary": "woohoo!",
+      "body": "Season 1 kicks off our modded server, date is a temporary placeholder. Get ready soon!",
+      "date": "2025-12-25T18:30:00-06:00",
+      "pinned": false,
+      "level": "info",
+      "showOnHomeModal": true
+    },
+    {
+      "id": "voting-open",
+      "title": "Voting Now Open!", 
+      "summary": "Suggest and vote on server features and rules.",
+      "body": "We have opened up voting for server features and rules! Head over to the Vote page to participate and help shape the future of the CBHS Minecraft Server.",
+      "date": "2025-12-05T12:00:00-06:00",
+      "pinned": true,
+      "level": "info",
+      "showOnHomeModal": true
+    },
+    {
+      "id": "username-info",
+      "title": "Dont forget to tell us your Minecraft username!",
+      "summary": "We need your Minecraft username to whitelist you on the server.",
+      "body": "Make sure to provide your Minecraft username when signing up for the server so we can whitelist you! Without it, you won't be able to join and play.",
+      "date": "2025-11-05T09:00:00-06:00",
+      "pinned": true, 
+      "level": "info",
+      "showOnHomeModal": true
+    }
+  ]
+}

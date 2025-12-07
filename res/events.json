@@ -1,0 +1,29 @@
+{
+  "maintenance": {
+    "enabled": true,
+    "weekday": 6,
+    "hour": 1,
+    "minute": 0,
+    "durationMinutes": 30,
+    "label": "Weekly Maintenance",
+    "description": "Every Saturday around 1:00 AM the server will briefly go offline for backups and updates."
+  },
+  "seasons": [
+    {
+      "id": "season-1",
+      "name": "Season 1",
+      "startsAt": "2025-12-10T18:30:00-01:00",
+      "status": "upcoming",
+      "description": "The start of the server..."
+    }
+  ],
+  "events": [
+    {
+      "id": "season-1-launch-party",
+      "title": "Season 1 Launch Party",
+      "date": "2025-12-25T18:30:00-06:00",
+      "description": "Hop on around launch time for a group start and screenshots.",
+      "type": "event"
+    }
+  ]
+}

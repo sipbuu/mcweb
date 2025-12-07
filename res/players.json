@@ -1,0 +1,70 @@
+{
+  "servers": [
+    {
+      "id": "modded",
+      "name": "Modded Survival",
+      "ip": "modded.cbhs.online",
+      "version": "1.20.1",
+      "default": true
+    },
+    {
+      "id": "vanilla",
+      "name": "Vanilla Survival",
+      "ip": "vanilla.cbhs.online",
+      "version": "1.21.x",
+      "default": false
+    }
+  ],
+  "players": [
+    {
+      "username": "L30T_",
+      "firstName": "Elliot",
+      "servers": ["modded"]
+    },
+    {
+      "username": "jrp7833",
+      "firstName": "Jackson",
+      "servers": ["modded"]
+    },
+    {
+      "username": "Fishy_business",
+      "firstName": "Charlie",
+      "servers": ["modded"]
+    },
+    {
+      "username": "Ethanollol1",
+      "firstName": "Ethan",
+      "servers": ["modded"]
+    },
+    {
+      "username": "OceanFlux",
+      "firstName": "Ethan",
+      "servers": ["modded"]
+    },
+    {
+      "username": "That1PieGuy",
+      "firstName": "Pierce",
+      "servers": ["modded"]
+    },
+    {
+      "username": "grant2428",
+      "firstName": "Grant",
+      "servers": ["modded"]
+    },
+    {
+      "username": "flames_of_arthur",
+      "firstName": "Juan",
+      "servers": ["modded"]
+    },
+    {
+      "username": "Quite_Savvy",
+      "firstName": "Christian",
+      "servers": ["modded"]
+    },
+    {
+      "username": "sipbuu",
+      "firstName": "Joseph",
+      "servers": ["modded"]
+    }
+  ]
+}

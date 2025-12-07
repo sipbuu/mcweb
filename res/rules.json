@@ -1,0 +1,135 @@
+{
+  "meta": {
+    "lastUpdated": "December 2025",
+    "appliesTo": "the server and associated discord"
+  },
+  "sections": [
+    {
+      "id": "common-sense",
+      "number": 1,
+      "title": "Common Rules",
+      "rules": [
+        {
+          "title": "No Xray.",
+          "body": "Yes, we understand that finding diamonds/debris is hard, but using Xray mods or texture packs to find ores is not allowed. We're trying to aim for a server that doesnt immediately devolve into everyone using Xray to get rich quick."
+        },
+        {
+          "title": "No cheating or exploiting.",
+          "body": "Obvious. Don't use hacked clients, mods, or exploits to gain an unfair advantage over other players."
+        },
+        {
+          "title": "No spawn camping.",
+          "body": "Don't kill or trap players as they spawn in. This is unfair and ruins the experience for new players."
+        },
+        {
+          "title": "Keep it somewhat school appropiate.",
+          "body": "We understand that this server is completely community-run, however, we do want it to still hold the school's values in mind, so do not do anything outright against policy, or we will ban you.  "
+        },
+        {
+          "title": "One account per person.",
+          "body": "Do not use alternate accounts to evade punishments or to try and get around punishments."
+        }
+      ]
+    },
+    {
+      "id": "Plugin-rules",
+      "number": 2,
+      "title": "Plugin Rules",
+      "rules": [
+        {
+            "title": "Minimap usage.",
+            "body": "Using a minimap mod is allowed, but do not use them to locate other players underneath blocks or bases. Keep it for navigation purposes only."
+        },
+        {
+            "title": "World Downloader usage.",
+            "body": "Using World Downloader to back up your builds is allowed, but do not use it to steal other players' builds or bases."
+        },
+        {
+            "title": "Seed finders prohibited.",
+            "body": "Do not use any mods or plugins that allow you to find the world seed or that allow you to locate specific biomes/structures (does not refer to modded items in the modded server)."
+        },
+        {
+            "title": "No land claims or buffs.",
+            "body": "Do not use any plugins or mods that allow you to claim land or give yourself buffs that other players do not have access to."
+        },
+        {
+            "title": "No abusing plugins.",
+            "body": "Do not exploit or abuse any server plugins to gain an unfair advantage or disrupt gameplay for others."
+        }
+      ]
+    },
+    {
+      "id": "Community-rules",
+      "number": 3,
+      "title": "Community Rules",
+      "rules": [
+        {
+          "title": "TBD.",
+          "body": "In the mean time, why dont you try voting on what rules you want to see?"
+        }
+      ]
+    },
+    { 
+      "id": "discord-rules-and-communications",
+      "number": 4,
+      "title": "Discord Rules and Communications",
+      "rules": [
+        {
+          "title": "Be respectful and kind.",
+          "body": "Treat others with respect and kindness. Harassment, hate speech, or any form of discrimination will not be tolerated."
+        },
+        {
+          "title": "No spamming or flooding.",
+          "body": "Avoid spamming messages, images, or reactions in any channel. Keep conversations meaningful and relevant."
+        },
+        {
+          "title": "Use appropriate channels.",
+          "body": "Post messages in the correct channels according to their topics. This helps keep the server organized and makes it easier for everyone to find relevant information."
+        },
+        {
+          "title": "Follow both discord's Terms of Service and Microsoft's.",
+          "body": "Ensure that your behavior on the server complies with Discord's and Microsoft's official Terms of Service and Community Guidelines."
+        },
+        {
+          "title": "No sharing personal information.",
+          "body": "Respect the privacy of others by not sharing personal information without consent. This includes addresses, phone numbers, and other sensitive data."
+        }
+      ]
+    },
+    {
+      "id": "acknowledgements-of-school-not-endorsing",
+      "number": 5,
+      "title": "CBHS Endorsement Acknowledgements",
+      "rules": [
+        {
+          "title": "CBHS is not hosting this server.",
+          "body": "Do not go up to IT at Christian Brothers and ask them about server issues. This server is completely community-run and is not hosted or maintained by CBHS, discussing the Minecraft club is fine."
+        },
+        {
+          "title": "CBHS does not endorse this server.",
+          "body": "While we try to keep the server family-friendly and somewhat school-appropriate, CBHS does not officially endorse this server or any servers related to it. Any issues or concerns should be directed to the server staff, not the school administration."
+        },
+        {
+          "title": "CBHS is not responsible for this server.",
+          "body": "Any issues, disputes, or problems that arise on the server are the responsibility of the server staff and community. CBHS is not to be liable for any actions taken by players or staff on this server."
+        },
+        {
+          "title": "Anything against school policy will likely get reported.",
+          "body": "If you do anything that is blatantly against school policy (such as harassment, hate speech, etc.), we may have to report it to school administration. So don't do that."
+        },
+        {
+          "title": "Do not use this server as an excuse to play during school hours.",
+          "body": "Playing on this server during school hours is not allowed, unless you're sick or at home. (also.. how would you even?)"
+        },
+        {
+          "title": "Do not be dumb and try to involve the school in server drama.",
+          "body": "If you have a dispute with another player or staff member, try to resolve it within the community. Do not drag the school into it unless it is absolutely necessary."
+        },
+        {
+          "title": "It is always up to the school to decide whether to end the server or not.",
+          "body": "Even though this server is community-run, if CBHS decides that it violates their policies or values, they have the right to request that we shut it down. We will comply with such requests."
+        }
+      ]
+    }
+  ]
+}

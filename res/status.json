@@ -1,0 +1,11 @@
+{
+  "status": "offline",
+  "label": "under maintenance",
+  "playersOnline": 0,
+  "maxPlayers": 0,
+  "motd": "",
+  "snapshot": {
+    "season": "season 1",
+    "totalPlayersJoined": 0
+  }
+}
