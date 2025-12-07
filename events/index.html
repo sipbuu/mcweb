@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>events • cbhs minecraft server</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/styles.css" />
+  <script src="/script.js" defer></script>
+</head>
+<body>
+  <div class="page-shell">
+    <div class="bg-layer bg-grid"></div>
+    <div class="bg-layer bg-glow bg-glow-1"></div>
+    <div class="bg-layer bg-glow bg-glow-2"></div>
+
+    <header class="site-header">
+      <div class="logo">
+        <span class="logo-icon">⛏</span>
+        <span class="logo-text">CBHS</span>
+      </div>
+
+      <nav class="nav-links">
+        <a href="/">Home</a>
+        <a href="/#about">About</a>
+        <a href="/#features">Features</a>
+        <a href="/#join">How to Join</a>
+        <a href="/#community">Community</a>
+      </nav>
+
+      <button class="nav-cta" onclick="window.location.href='/rules'">
+        Server Rules
+      </button>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span>
+      </button>
+    </header>
+
+    <div id="event-banner" class="event-banner hidden">
+      <div class="event-banner-inner">
+        <span class="event-banner-badge" id="event-banner-badge">Upcoming</span>
+        <span class="event-banner-text" id="event-banner-text">
+          Loading events...
+        </span>
+        <span class="event-banner-countdown" id="event-banner-countdown"></span>
+      </div>
+    </div>
+
+    <main class="content-main">
+      <section class="section section-narrow content-header">
+        <p class="eyebrow">CBHS Minecraft Server</p>
+        <h1>events & seasons</h1>
+        <p class="content-lead">
+          see upcoming season launches, maintenance, and any special events
+          for the server
+        </p>
+      </section>
+
+      <section class="section section-narrow">
+        <h2>season Countdown</h2>
+        <div id="season-countdown" class="season-countdown-box">
+        </div>
+      </section>
+
+      <section class="section section-narrow">
+        <h2>maintenance Schedule</h2>
+        <p id="maintenance-summary" class="maintenance-summary">
+        </p>
+      </section>
+
+      <section class="section section-narrow">
+        <h2>upcoming events</h2>
+        <div id="events-list" class="events-list">
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span class="footer-divider">•</span>
+      <span>Not affiliated with Mojang or Microsoft or endorsed by CBHS.</span>
+    </footer>
+  </div>
+</body>
+</html>
