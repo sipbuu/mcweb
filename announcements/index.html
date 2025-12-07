@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>announcements • cbhs minecraft server</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../styles.css" />
+  <script src="../script.js" defer></script>
+</head>
+<body>
+  <div class="page-shell">
+    <div class="bg-layer bg-grid"></div>
+    <div class="bg-layer bg-glow bg-glow-1"></div>
+    <div class="bg-layer bg-glow bg-glow-2"></div>
+
+    <header class="site-header">
+      <div class="logo">
+        <span class="logo-icon">⛏</span>
+        <span class="logo-text">CBHS</span>
+      </div>
+
+      <nav class="nav-links">
+        <a href="/#hero">Home</a>
+        <a href="/#about">About</a>
+        <a href="/#features">Features</a>
+        <a href="/#join">How to Join</a>
+        <a href="/#community">Community</a>
+      </nav>
+
+      
+      <button class="nav-cta" onclick="window.location.href='/players'">
+        Players
+      </button>
+      <button class="nav-cta" onclick="window.location.href='/rules'">
+        Server Rules
+      </button>
+      <button class="nav-cta" onclick="window.location.href='/faq'">
+        FAQ
+      </button>
+      <button class="nav-cta" onclick="window.location.href='/staff'">
+        Staff
+      </button>
+      <button class="nav-cta" onclick="window.location.href='/announcements'">
+        Announcements
+      </button>
+      <button class="nav-cta" onclick="window.location.href='/updates'">
+        Updates
+      </button>
+      <button class="nav-cta" onclick="window.location.href='/vote'">
+        Vote
+      </button>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span>
+      </button>
+    </header>
+
+    <main class="content-main">
+      <section class="section section-narrow content-header">
+        <p class="eyebrow">CBHS Minecraft Server</p>
+        <h1>anouncements</h1>
+        <p class="content-lead">
+          stay up to date on any maintenance, important changes, or events on the server.
+        </p>
+      </section>
+
+      <section class="section section-narrow">
+        <div id="announcements-list" class="announcements-list">
+          <!-- Filled from announcements.json by script.js -->
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span class="footer-divider">•</span>
+      <span>Not affiliated with Mojang or Microsoft or endorsed by CBHS.</span>
+    </footer>
+  </div>
+</body>
+</html>
