@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>main • cbhs minecraft server</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta property="og:site_name" content="cbhs minecraft server" />
+  <meta property="og:title" content="main page" />
+  <meta property="og:description" content="main page for the cbhs minecraft server" />
+  <meta property="og:url" content="https://cbhs.online/" />
+  <meta property="og:type" content="website" />
+
+  <meta property="og:image" content="https://files.catbox.moe/5ifrep.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <div class="page-shell">
+    <div class="bg-layer bg-grid"></div>
+    <div class="bg-layer bg-glow bg-glow-1"></div>
+    <div class="bg-layer bg-glow bg-glow-2"></div>
+
+
+    <canvas class="bg-layer bg-season-canvas" id="bg-season-canvas"></canvas>
+    <header class="site-header">
+
+      <div class="logo">
+        <span class="logo-icon">
+            <img src="https://files.catbox.moe/9ezrzn.png" alt="CBHS Logo" class="logo-img">
+        </span>
+        <span class="logo-text">CBHS</span>
+      </div>
+
+      <nav class="nav-links">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="#join">How to Join</a>
+        <a href="#community">Community</a>
+      </nav>
+      <button class="nav-cta" onclick="window.location.href='/players'">
+        Players
+      </button>
+      <button class="nav-cta" onclick="window.location.href='/rules'">
+        Server Rules
+      </button>
+      <button class="nav-cta" onclick="window.location.href='/faq'">
+        FAQ
+      </button>
+      <button class="nav-cta" onclick="window.location.href='/staff'">
+        Staff
+      </button>
+      <button class="nav-cta" onclick="window.location.href='/announcements'">
+        Announcements
+      </button>
+      <button class="nav-cta" onclick="window.location.href='/updates'">
+        Updates
+      </button>
+      <button class="nav-cta" onclick="window.location.href='/vote'">
+        Vote
+      </button>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span>
+      </button>
+    </header>
+
+    <div id="event-banner" class="event-banner hidden">
+            <div class="event-banner-inner">
+                <span class="event-banner-badge" id="event-banner-badge">Upcoming</span>
+                <span class="event-banner-text" id="event-banner-text">
+                Loading events...
+                </span>
+                <span class="event-banner-countdown" id="event-banner-countdown"></span>
+            </div>
+        </div>
+    <main>
+      <section id="hero" class="hero">
+        <div class="hero-left">
+          <div class="pill pill-status" id="status-pill">
+            <span class="dot" id="status-dot"></span>
+            <span class="pill-label" id="status-label">checking...</span>
+            <span class="pill-value" id="fake-player-count">-- / --</span>
+            <!-- i swear later we'll make this real, one day... -->
+        </div>
+
+
+          <h1 class="hero-title">
+            CBHS Minecraft<span class="hero-title-highlight"> Server</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            <span id="typewriter"></span><span class="cursor">_</span>
+          </p>
+
+          <div class="hero-ip-card">
+            <div class="hero-ip-main">
+              <span class="ip-label">server ip</span>
+              <span class="ip-value" id="server-ip">mc.cbhs.online</span>
+            </div>
+            <button class="btn btn-ghost" id="copy-ip-btn">
+              copy ip
+              <span class="copy-status" id="copy-status">copied!</span>
+            </button>
+          </div>
+
+          <div class="hero-actions">
+            <button class="btn btn-primary" onclick="document.querySelector('#join').scrollIntoView({behavior:'smooth'})">
+              how to join
+            </button>
+            <button class="btn btn-secondary" onclick="window.location.href='https://discord.gg/Vc72Q5VFTZ'">
+              join the discord
+            </button>
+            <button class="btn btn-ghost" type="button" id="open-ip-modal">
+                all server ips
+            </button>
+          </div>
+
+          <div class="hero-meta">
+            <span>version: 1.21.x java and bedrock </span>
+            <span>mode: modded survival, survival, more soon. </span>
+          </div>
+
+          <div class="hero-season-chip" id="hero-season-chip"></div>
+        </div>
+
+        <div class="hero-right">
+          <div class="hero-card floating-card reveal">
+            <div class="hero-card-header">
+              <h2>server snapshot</h2>
+            <span class="tag tag-soft" id="status-tag">checking...</span>
+            </div>
+            <div class="hero-card-content">
+              <ul class="hero-stats">
+                <li>
+                  <span class="stat-label">current season</span>
+  <span class="stat-value" id="status-season">season 1</span>
+                </li>
+                <li>
+                  <span class="stat-label">total players joined</span>
+                    <span class="stat-value" id="status-total-players">0</span>
+                </li>
+              </ul>
+              <p class="status-motd" id="status-motd"></p>
+
+              <!-- 
+              <div class="mini-map">
+                <div class="mini-map-overlay">
+                  <span class="mini-map-label">Dynmap</span>
+                  <button class="mini-map-btn" onclick="window.location.href='map.html'"> USE THIS WHEN WE HAVE AN ACTUAL BACKEND LOL
+                    Open Map
+                  </button>
+                </div>
+              </div>
+            -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="section-header">
+          <h2>what is this server?</h2>
+          <p>
+            just a server we make every now and then to have people be able to play minecraft together, mainly for cbhs students 
+          </p>
+        </div>
+
+        
+        <div class="card-grid">
+          <article class="feature-card reveal">
+            <h3>modded</h3>
+            <p>
+              one of our main servers, we will have modpacks easily set up for you to download and play.
+            </p>
+          </article>
+
+          <article class="feature-card reveal delay-1">
+            <h3>..are you bored of modded. survival!</h3>
+            <p>
+              (coming soon):  for those who like the classic survival experience, we will have a vanilla survival world too.
+            </p>
+          </article>
+
+          <article class="feature-card reveal delay-2">
+            <h3>..and many more!</h3>
+            <p>
+              we plan to add more game modes and worlds in the future, such as creative, other minigames and stuff, just depends on what we hear from you guys!
+            </p>
+          </article>
+        </div>
+        
+      </section>
+
+      <section id="features" class="section">
+        <div class="section-header">
+          <h2>server details</h2>
+          <p>multi-server with modded, survival, and others soon.. (only modded for now) </p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>modded</h3>
+              <p>main server, will contain multiple seasons/resets with experimental mods! </p>
+              <span class="timeline-tag">main</span>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal delay-1">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>vanilla</h3>
+              <p>another one of our main servers, will contain resets as well, without any modifications!</p>
+              <span class="timeline-tag">main</span>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal delay-2">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>???</h3>
+              <p>stay tuned...</p>
+              <span class="timeline-tag">TBD</span>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal delay-3">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>???</h3>
+              <p>stay tuned...</p>
+              <span class="timeline-tag">TBD</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="join" class="section section-alt">
+        <div class="section-header">
+          <h2>how to join?</h2>
+          <p>follow these simple steps to join the server</p>
+        </div>
+
+        <div class="steps-grid">
+          <article class="step-card reveal">
+            <span class="step-number">1</span>
+            <h3>Open Minecraft: Java Edition (or bedrock, we dont mind)</h3>
+            <p>If you're using java, use version <strong>1.21.x</strong> for the best experience. Other close versions may still work.</p>
+          </article>
+
+          <article class="step-card reveal delay-1">
+            <span class="step-number">2</span>
+            <h3>Add the Server</h3>
+            <p>
+              Go to <strong>Multiplayer → Add Server</strong> and use:
+              <code class="code-inline">mc.cbhs.online</code> as the address or <code class="code-inline">bedrock.cbhs.online</code> for bedrock.
+            </p>
+          </article>
+
+          <article class="step-card reveal delay-2">
+            <span class="step-number">3</span>
+            <h3>Read the Rules</h3>
+            <p>
+              Check the <a href="/rules">rules page</a> so you know what’s allowed and how to not be a nuisance.
+            </p>
+          </article>
+
+          <article class="step-card reveal delay-3">
+            <span class="step-number">4</span>
+            <h3>Join the Discord</h3>
+            <p>
+              Get updates, report issues, and hang out w/ other players in
+              the <a href="https://discord.gg/Vc72Q5VFTZ">CBHS Gaming Discord</a>.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="community" class="section">
+        <div class="section-header">
+          <h2>Community & Links</h2>
+          <p>Use these pages to see other places on the website.</p>
+        </div>
+
+        <div class="community-grid">
+          <div class="community-card reveal">
+            <h3>Links</h3>
+            <ul class="link-list">
+              <li><a href="/rules">Rules</a></li>
+              <li><a href="https://cbhs.online">Main Page</a></li>
+              <li><a href="/staff">Staff</a></li>
+              <li><a href="/faq">FAQ</a></li>
+            </ul>
+          </div>
+
+          <div class="community-card reveal delay-1">
+            <h3>Contact</h3>
+            <p>
+              Questions (or just wanting to rant)? Reach out:
+            </p>
+            <p>
+              <strong>Email:</strong> <a href="mailto:slyqap@gmail.com">slyqap@gmail.com</a><br />
+              <strong>Discord:</strong> <a href="https://discord.gg/6E3MgKbCmt">#support</a>
+            </p>
+          </div>
+
+          <div class="community-card reveal delay-2">
+            <h3>Please try and play nice...</h3>
+            <p>
+              No griefing unless needed. No harassment. Respect your fellow players.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+    <div class="modal-backdrop" id="announcement-modal" aria-hidden="true">
+    <div class="modal">
+        <div class="modal-header">
+        <span class="modal-badge" id="modal-badge">Announcement</span>
+        <button class="modal-close" type="button" id="modal-close-btn">×</button>
+        </div>
+        <h2 class="modal-title" id="modal-title">Scheduled Maintenance</h2>
+        <p class="modal-meta" id="modal-meta"></p>
+        <p class="modal-body" id="modal-body">
+        The server will be offline for roughly 30 minutes while we perform maintenance.
+        </p>
+        <div class="modal-actions">
+        <button class="btn btn-secondary" type="button" id="modal-dismiss-today">
+            Don’t show again today
+        </button>
+        <button class="btn btn-primary" type="button" id="modal-ok-btn">
+            Got it
+        </button>
+        </div>
+    </div>
+    </div>
+
+    <div class="modal-backdrop" id="ip-modal" aria-hidden="true">
+    <div class="modal">
+        <div class="modal-header">
+        <span class="modal-badge">Server IPs</span>
+        <button class="modal-close" type="button" id="ip-modal-close">×</button>
+        </div>
+        <h2 class="modal-title">CBHS Minecraft Servers</h2>
+        <p class="modal-body">
+        Use these addresses to join from Java or Bedrock Edition.
+        </p>
+
+        <div class="ip-list">
+        <div class="ip-row">
+            <div class="ip-label-side">
+            <span class="ip-platform">Java Edition</span>
+            <span class="ip-version">1.21.x</span>
+            </div>
+            <div class="ip-value-side">
+            <code class="code-inline">mc.cbhs.online</code>
+            <button class="btn btn-ghost btn-small" type="button" data-copy-ip="mc.cbhs.online">
+                copy
+            </button>
+            </div>
+        </div>
+
+        <div class="ip-row">
+            <div class="ip-label-side">
+            <span class="ip-platform">Bedrock Edition</span>
+            <span class="ip-version">1.21.x+</span>
+            </div>
+            <div class="ip-value-side">
+            <code class="code-inline">bed.cbhs.online</code>
+            <button class="btn btn-ghost btn-small" type="button" data-copy-ip="bed.cbhs.online">
+                copy
+            </button>
+            </div>
+        </div>
+        </div>
+
+        <div class="modal-actions">
+        <button class="btn btn-primary" type="button" id="ip-modal-ok">
+            Got it
+        </button>
+        </div>
+    </div>
+    </div>
+
+   <footer class="site-footer">
+      <span class="footer-divider">•</span>
+      <span>Not affiliated with Mojang or Microsoft or endorsed by CBHS.</span>
+    </footer>
+  </div>
+</body>
+</html>

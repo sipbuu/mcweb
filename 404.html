@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>404 • cbhs minecraft server</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/styles.css" />
+  <style>
+    body {
+      overflow: hidden;
+    }
+
+    .page-shell {
+      opacity: 0;
+      transform: scale(1.03);
+      filter: blur(4px);
+      animation: page-enter-404 600ms ease-out forwards;
+    }
+
+    @keyframes page-enter-404 {
+      0% {
+        opacity: 0;
+        transform: scale(1.04);
+        filter: blur(6px);
+      }
+      40% {
+        opacity: 1;
+        transform: scale(1.015);
+        filter: blur(3px);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+        filter: blur(0);
+      }
+    }
+
+    .error-main {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px 16px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .error-grid {
+      position: absolute;
+      inset: 0;
+      background-image: linear-gradient(
+          rgba(40, 48, 120, 0.28) 1px,
+          transparent 1px
+        ),
+        linear-gradient(
+          90deg,
+          rgba(40, 48, 120, 0.24) 1px,
+          transparent 1px
+        );
+      background-size: 32px 32px;
+      opacity: 0.35;
+      transform: perspective(600px) rotateX(68deg) translateY(30%);
+      transform-origin: center top;
+      pointer-events: none;
+    }
+
+    .error-main::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      mix-blend-mode: screen;
+      background-image:
+        repeating-linear-gradient(
+          to bottom,
+          rgba(255, 255, 255, 0.06),
+          rgba(255, 255, 255, 0.06) 1px,
+          transparent 1px,
+          transparent 3px
+        );
+      opacity: 0.0;
+      animation: scanlines-404 2.3s linear infinite;
+    }
+
+    @keyframes scanlines-404 {
+      0% {
+        opacity: 0.12;
+        transform: translateY(0);
+      }
+      50% {
+        opacity: 0.05;
+      }
+      100% {
+        opacity: 0.12;
+        transform: translateY(2px);
+      }
+    }
+
+    .error-card {
+      position: relative;
+      max-width: 420px;
+      width: 100%;
+      background: rgba(5, 7, 18, 0.97);
+      border-radius: 20px;
+      border: 1px solid rgba(187, 197, 255, 0.4);
+      box-shadow: 0 26px 80px rgba(0, 0, 0, 0.85);
+      padding: 18px 18px 16px;
+      text-align: left;
+      z-index: 1;
+      animation: card-pop-404 420ms cubic-bezier(0.2, 0.9, 0.3, 1.2) 80ms both;
+    }
+
+    @keyframes card-pop-404 {
+      0% {
+        transform: translateY(14px) scale(0.96);
+        opacity: 0;
+      }
+      60% {
+        transform: translateY(0) scale(1.02);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+      }
+    }
+
+    .error-code {
+      font-size: 40px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent-2);
+      margin-bottom: 4px;
+      text-shadow: 0 0 12px rgba(79, 243, 197, 0.5);
+    }
+
+    .error-title {
+      margin: 0 0 6px;
+      font-size: 20px;
+    }
+
+    .error-text {
+      margin: 0 0 12px;
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+
+    .error-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+
+    .error-tip {
+      margin: 0;
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    .error-egg-log {
+      margin-top: 10px;
+      font-size: 12px;
+      color: var(--text-muted);
+      max-height: 80px;
+      overflow-y: auto;
+    }
+
+    .error-egg-log div {
+      opacity: 0.8;
+      margin-bottom: 2px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .page-shell {
+        animation: none;
+        opacity: 1;
+        transform: none;
+        filter: none;
+      }
+      .error-main::before {
+        animation: none;
+        opacity: 0.08;
+      }
+      .error-card {
+        animation: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-shell">
+    <div class="bg-layer bg-grid"></div>
+    <div class="bg-layer bg-glow bg-glow-1"></div>
+    <div class="bg-layer bg-glow bg-glow-2"></div>
+
+    <main class="error-main">
+      <div class="error-grid"></div>
+
+      <section class="error-card">
+        <div class="error-code">404</div>
+        <h1 class="error-title">Whoooops.</h1>
+        <p class="error-text" id="error-line">
+          You fell into the void. This page doesn’t exist on the CBHS Minecraft Server site.
+        </p>
+
+        <div class="error-actions">
+          <a class="btn btn-primary" href="/">Back to spawn</a>
+          <button class="btn btn-secondary" type="button" id="error-snowball-btn">
+            Throw a snowball
+          </button>
+        </div>
+
+        <p class="error-tip">
+          Tip: Use the nav bar, or make sure you didn't mistype the link....
+        </p>
+
+        <div class="error-egg-log" id="error-egg-log"></div>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    (function () {
+      const lines = [
+        "You tried to load a chunk that doesn’t exist.",
+        "Your elytra flight went a bit too far.",
+        "This portal leads nowhere. Yet.",
+        "Server says: 'Unknown location. Try /spawn?'",
+        "Looks like a missing block in the website world."
+      ];
+
+      const lineEl = document.getElementById("error-line");
+      if (lineEl) {
+        const pick = lines[Math.floor(Math.random() * lines.length)];
+        lineEl.textContent = pick;
+      }
+
+      const btn = document.getElementById("error-snowball-btn");
+      const log = document.getElementById("error-egg-log");
+      let count = 0;
+      const messages = [
+        "The snowball flew into the void.",
+        "You bonked an invisible skeleton.",
+        "A wandering trader fell off with your snowball.",
+        "The snowball froze mid-air. Spooky.",
+        "You hit a phantom. It did not care."
+      ];
+
+      if (btn && log) {
+        btn.addEventListener("click", () => {
+          count++;
+          const msg = messages[Math.floor(Math.random() * messages.length)];
+          const row = document.createElement("div");
+          row.textContent = `Snowball #${count}: ${msg}`;
+          log.prepend(row);
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
