@@ -3,6 +3,14 @@
   "description": "vote on events, features, and changes for the CBHS Minecraft Server.",
   "polls": [
     {
+      "id": "mandatory",
+      "label": "mandatory name",
+      "description": "[mandatory]: put your real name into this forum so we know who you are!",
+      "open": true,
+      "formUrl": "https://forms.gle/KtVXZDHN1VEmkyy37",
+      "autoRedirectSeconds": 0
+    },
+    {
       "id": "mod-suggestion",
       "label": "mod suggestions",
       "description": "suggest and vote on mods to be added to the modded server!",
