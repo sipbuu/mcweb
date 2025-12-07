@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>bedrock guide • cbhs minecraft server</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../styles.css" />
+  <script src="../script.js" defer></script>
+</head>
+<body>
+  <div class="page-shell">
+    <div class="bg-layer bg-grid"></div>
+    <div class="bg-layer bg-glow bg-glow-1"></div>
+    <div class="bg-layer bg-glow bg-glow-2"></div>
+
+    <header class="site-header">
+      <div class="logo">
+        <span class="logo-icon">⛏</span>
+        <span class="logo-text">CBHS</span>
+      </div>
+
+      <nav class="nav-links">
+        <a href="/">Home</a>
+        <a href="/#about">About</a>
+        <a href="/#features">Features</a>
+        <a href="/#join">How to Join</a>
+        <a href="/#community">Community</a>
+      </nav>
+
+      <button class="nav-cta" onclick="window.location.href='/players'">
+        Players
+      </button>
+      <button class="nav-cta" onclick="window.location.href='/rules'">
+        Server Rules
+      </button>
+      <button class="nav-cta" onclick="window.location.href='/faq'">
+        FAQ
+      </button>
+      <button class="nav-cta" onclick="window.location.href='/staff'">
+        Staff
+      </button>
+      <button class="nav-cta" onclick="window.location.href='/announcements'">
+        Announcements
+      </button>
+      <button class="nav-cta" onclick="window.location.href='/updates'">
+        Updates
+      </button>
+      <button class="nav-cta" onclick="window.location.href='/vote'">
+        Vote
+      </button>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span>
+      </button>
+    </header>
+
+    <main class="content-main">
+      <section class="section section-narrow content-header">
+        <p class="eyebrow">CBHS Minecraft Server</p>
+        <h1>bedrock players guide</h1>
+        <p class="content-lead">
+          this page is just for minecraft: bedrock edition players (mobile, console, windows with the bedrock client).
+          you’ll be connecting through geyser to reach the cbhs java server.
+          keep in mind, you will mainly be able to play the vanilla servers, not the modded ones.
+        </p>
+      </section>
+
+      <section class="section section-narrow">
+        <h2>quick info</h2>
+        <div class="card-grid">
+          <article class="feature-card">
+            <h3>server address</h3>
+            <p>
+              <strong>Bedrock IP:</strong>
+              <code class="code-inline">bed.cbhs.online</code><br />
+              <strong>Port:</strong> <code class="code-inline">19132</code>
+            </p>
+            <p>
+              This works for mobile Bedrock and for some console setups that use Geyser.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <h3>sign in requirement</h3>
+            <p>
+              When you connect from Bedrock, you should see a prompt like:
+              <strong>"Log in with a Microsoft account"</strong>. You must log in with your normal
+              Xbox / Microsoft account in order to join the CBHS server through Bedrock.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <h3>what’s happening?</h3>
+            <p>
+              We use <strong>Geyser</strong> so that Bedrock players can connect to a Java server.
+              Your Bedrock account stays Bedrock; you’re just being “translated” into the Java server.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-narrow">
+        <h2>mobile (phone / tablet) setup</h2>
+        <p class="content-lead">
+          If you’re on iOS or Android using the normal Minecraft Bedrock app, follow these steps:
+        </p>
+
+        <div class="steps-grid">
+          <article class="step-card">
+            <span class="step-number">1</span>
+            <h3>Open Minecraft Bedrock</h3>
+            <p>
+              Launch <strong>Minecraft</strong> and make sure you’re signed in with your Microsoft / Xbox account.
+            </p>
+          </article>
+
+          <article class="step-card">
+            <span class="step-number">2</span>
+            <h3>Go to "Play" → "Servers" or "Friends"</h3>
+            <p>
+              On some versions you’ll have an <strong>"Add Server"</strong> button. On others, Geyser /
+              the Bedrock proxy may show up under <strong>"Friends"</strong>.
+            </p>
+          </article>
+
+          <article class="step-card">
+            <span class="step-number">3</span>
+            <h3>Add the CBHS server</h3>
+            <p>
+              If you can add a server manually, use:
+            </p>
+            <p>
+              <strong>Server name:</strong> CBHS Minecraft<br />
+              <strong>Server address:</strong> <code class="code-inline">bed.cbhs.online</code><br />
+              <strong>Port:</strong> <code class="code-inline">19132</code>
+            </p>
+          </article>
+
+          <article class="step-card">
+            <span class="step-number">4</span>
+            <h3>Log in with Microsoft account</h3>
+            <p>
+              When Geyser connects you, you should see a
+              <strong>"Log in with a Microsoft account"</strong> screen. Follow the on-screen steps to confirm your
+              Microsoft account and finish linking.
+            </p>
+            <p>
+              After that, you should land in the CBHS lobby just like a Java player.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-narrow">
+        <h2>console players (Xbox / PlayStation / Switch)</h2>
+        <p class="content-lead">
+          Consoles don’t let you directly type in custom servers normally, so you’ll usually go through DNS or via a friend request. It’s easiest just to follow a short video.
+        </p>
+
+        <div class="community-grid">
+          <article class="community-card">
+            <h3>watch this guide</h3>
+            <p>
+              If you’re on console, follow this video to learn how to join custom servers / Geyser setups
+              from Bedrock:
+            </p>
+            <p>
+              <a href="https://www.youtube.com/watch?v=_lP7PnpbqvY" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                open console guide on YouTube
+              </a>
+            </p>
+            <p style="font-size: 12px; color: var(--text-muted); margin-top: 4px;">
+              (i'm not the creator of the video, but the method is similar – you’ll just use
+              <code class="code-inline">bed.cbhs.online</code> where the video uses its example server.)
+            </p>
+          </article>
+
+          <article class="community-card">
+            <h3>what info you’ll need</h3>
+            <p>
+              When the video tells you to enter a server address, use:
+            </p>
+            <p>
+              <strong>Server address:</strong> <code class="code-inline">bed.cbhs.online</code><br />
+              <strong>Port:</strong> <code class="code-inline">19132</code>
+            </p>
+            <p>
+              Once connected, you should still see the <strong>"Log in with a Microsoft account"</strong> prompt
+              through Geyser before you join the CBHS server.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-narrow">
+        <h2>common issues & tips</h2>
+
+        <article class="accordion-item faq-item reveal open">
+            <button class="accordion-header" type="button">
+              <span class="faq-question">I never see "Log in with a Microsoft account</span>
+              <span class="accordion-toggle">▾</span>
+            </button>
+            <div class="accordion-body">
+              <p>
+                Make sure you’re actually connecting through the Bedrock / Geyser address
+                <code class="code-inline">bed.cbhs.online</code> and not the Java IP. Also confirm that you’re signed in to Minecraft with a Microsoft/Xbox account on that device.
+            </div>
+          </article>
+          <article class="accordion-item faq-item reveal open">
+            <button class="accordion-header" type="button">
+              <span class="faq-question">It says "Unable to connect to world"</span>
+              <span class="accordion-toggle">▾</span>
+            </button>
+            <div class="accordion-body">
+              <p>
+                CBHS server might be offline or restarting. Check the Announcements page or the Discord for status. On mobile, try fully closing Minecraft and reopening it before reconnecting.
+            </div>
+          </article>
+          <article class="accordion-item faq-item reveal open">
+            <button class="accordion-header" type="button">
+              <span class="faq-question">Can I play with Java players.</span>
+              <span class="accordion-toggle">▾</span>
+            </button>
+            <div class="accordion-body">
+              <p>
+                Yes. Geyser lets Bedrock players join the same world as Java players. Some cosmetics or
+                very specific features may work slightly differently, but you’re in the same server.
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© <span id="year"></span> CBHS Minecraft Server</span>
+      <span class="footer-divider">•</span>
+      <span>Not affiliated with Mojang or Microsoft or endorsed by CBHS.</span>
+    </footer>
+  </div>
+</body>
+</html>
