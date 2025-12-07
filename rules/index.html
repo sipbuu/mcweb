@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title> rules • cbhs minecraft server</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  
+  <meta property="og:site_name" content="cbhs minecraft server" />
+  <meta property="og:title" content="rules" />
+  <meta property="og:description" content="rules for the cbhs minecraft server" />
+  <meta property="og:url" content="https://cbhs.online/rules/" />
+  <meta property="og:type" content="website" />
+
+  <meta property="og:image" content="https://files.catbox.moe/5ifrep.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../styles.css" />
+  <script src="../script.js" defer></script>
+</head>
+<body>
+  <div class="page-shell">
+    <div class="bg-layer bg-grid"></div>
+    <div class="bg-layer bg-glow bg-glow-1"></div>
+    <div class="bg-layer bg-glow bg-glow-2"></div>
+
+    <header class="site-header">
+      <div class="logo">
+        <span class="logo-icon">⛏</span>
+        <span class="logo-text">CBHS</span>
+      </div>
+
+      <nav class="nav-links">
+        <a href="/#hero">Home</a>
+        <a href="/#about">About</a>
+        <a href="/#features">Features</a>
+        <a href="/#join">How to Join</a>
+        <a href="/#community">Community</a>
+      </nav>
+
+      <button class="nav-cta" onclick="window.location.href='/players'">
+        Players
+      </button>
+      <button class="nav-cta" onclick="window.location.href='/rules'">
+        Server Rules
+      </button>
+      <button class="nav-cta" onclick="window.location.href='/faq'">
+        FAQ
+      </button>
+      <button class="nav-cta" onclick="window.location.href='/staff'">
+        Staff
+      </button>
+      <button class="nav-cta" onclick="window.location.href='/announcements'">
+        Announcements
+      </button>
+      <button class="nav-cta" onclick="window.location.href='/updates'">
+        Updates
+      </button>
+      <button class="nav-cta" onclick="window.location.href='/vote'">
+        Vote
+      </button>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span>
+      </button>
+
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span>
+      </button>
+    </header>
+
+    <main class="content-main">
+      <section class="section section-narrow content-header">
+        <p class="eyebrow">CBHS Minecraft Server</p>
+        <h1>server rules</h1>
+        <p class="content-lead">
+          these rules keep the server from becoming chaotic and keeping it funs...
+          By joining <strong>mc.cbhs.online</strong>, you agree to follow them
+          in-game and somewhat in related spaces (Discord, chats, etc.).
+        </p>
+
+        <div class="content-meta">
+          <span>last updated: <strong id="rules-last-updated">–</strong>,</span>
+          <span>applies to: <strong id="rules-applies-to">–</strong></span>
+        </div>
+      </section>
+
+      <section class="section section-narrow">
+        <div class="rules-layout">
+          <aside class="rules-sidebar reveal">
+            <h2 class="rules-sidebar-title">Sections</h2>
+            <ol class="rules-nav" id="rules-nav"></ol>
+          </aside>
+
+          <div class="rules-content" id="rules-content">
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span class="footer-divider">•</span>
+      <span>Not affiliated with Mojang or Microsoft or endorsed by CBHS.</span>
+    </footer>
+  </div>
+</body>
+</html>
