@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>players • cbhs minecraft server</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/styles.css" />
+  <script src="/script.js" defer></script>
+</head>
+<body>
+  <div class="page-shell">
+    <div class="bg-layer bg-grid"></div>
+    <div class="bg-layer bg-glow bg-glow-1"></div>
+    <div class="bg-layer bg-glow bg-glow-2"></div>
+
+    <header class="site-header">
+      <div class="logo">
+        <span class="logo-icon">⛏</span>
+        <span class="logo-text">CBHS</span>
+      </div>
+
+      <nav class="nav-links">
+        <a href="/#hero">Home</a>
+        <a href="/#about">About</a>
+        <a href="/#features">Features</a>
+        <a href="/#join">How to Join</a>
+        <a href="/#community">Community</a>
+      </nav>
+
+      
+      <button class="nav-cta" onclick="window.location.href='/players'">
+        Players
+      </button>
+      <button class="nav-cta" onclick="window.location.href='/rules'">
+        Server Rules
+      </button>
+      <button class="nav-cta" onclick="window.location.href='/faq'">
+        FAQ
+      </button>
+      <button class="nav-cta" onclick="window.location.href='/staff'">
+        Staff
+      </button>
+      <button class="nav-cta" onclick="window.location.href='/announcements'">
+        Announcements
+      </button>
+      <button class="nav-cta" onclick="window.location.href='/updates'">
+        Updates
+      </button>
+      <button class="nav-cta" onclick="window.location.href='/vote'">
+        Vote
+      </button>
+
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span>
+      </button>
+    </header>
+
+    <main class="content-main">
+      <section class="section section-narrow content-header">
+        <p class="eyebrow">CBHS Minecraft Server</p>
+        <h1>players</h1>
+        <p class="content-lead">
+          known players on the CBHS Minecraft Server (if you're not on this list, please let us know who you are so you don't get kicked!).
+        </p>
+      </section>
+
+      <section class="section section-narrow">
+        <div class="players-controls">
+          <div class="players-server-switch" id="players-server-switch">
+          </div>
+          <p class="players-note">
+            Player avatars provided by <a href="https://mc-heads.net" target="_blank" rel="noopener noreferrer">MCHeads</a>.
+          </p>
+        </div>
+
+        <div id="players-list" class="players-list">
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span class="footer-divider">•</span>
+      <span>Not affiliated with Mojang or Microsoft or endorsed by CBHS.</span>
+    </footer>
+  </div>
+</body>
+</html>
