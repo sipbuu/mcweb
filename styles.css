@@ -160,6 +160,11 @@ body {
     display: none; 
 }
 
+@media (max-width: 880px) {
+    .nav-links a.hidden {
+        display: inline; 
+    }
+}
 .nav-links a:hover {
   background: rgba(255, 255, 255, 0.05);
   color: var(--text);
@@ -1750,4 +1755,5 @@ a {
   z-index: 0;            
   opacity: 0.75;         
 }
+
 
