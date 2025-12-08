@@ -156,9 +156,11 @@ body {
   border-radius: 999px;
   transition: background var(--transition-fast), color var(--transition-fast), transform 80ms ease-out;
 }
+
 .nav-links a.hidden {
-    display: none; /* hide em for desktop users! */
+    display: none; 
 }
+
 
 
 .nav-links a:hover {
@@ -817,8 +819,8 @@ a {
   }
 
   .nav-links a.hidden {
-      display: inline; /* using this so i DONT HAVE TO CODE IT IN FOR F****N mobile
-  }
+        display: inline; 
+    }
   .nav-links {
     position: fixed;
     inset: 68px 16px auto;
@@ -1753,6 +1755,7 @@ a {
   z-index: 0;            
   opacity: 0.75;         
 }
+
 
 
 
