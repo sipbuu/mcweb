@@ -156,12 +156,9 @@ body {
   border-radius: 999px;
   transition: background var(--transition-fast), color var(--transition-fast), transform 80ms ease-out;
 }
-
 .nav-links a.hidden {
     display: none; 
 }
-
-
 
 .nav-links a:hover {
   background: rgba(255, 255, 255, 0.05);
@@ -817,9 +814,8 @@ a {
   .site-header {
     border-radius: 18px;
   }
-
   .nav-links a.hidden {
-        display: inline; 
+        display: inline; /* These links become visible on small screens */
     }
   .nav-links {
     position: fixed;
@@ -834,7 +830,6 @@ a {
     pointer-events: none;
     transition: opacity var(--transition-med), transform var(--transition-med);
   }
-
   .nav-links.open {
     transform: translateY(0);
     opacity: 1;
@@ -1755,7 +1750,4 @@ a {
   z-index: 0;            
   opacity: 0.75;         
 }
-
-
-
 
