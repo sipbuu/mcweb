@@ -820,7 +820,7 @@ a {
     border-radius: 18px;
   }
   .nav-links a.hidden {
-        display: inline; /* These links become visible on small screens */
+        display: inline; /* SEEN CRAZY SHIT MAN CRAZY SHIT */
     }
   .nav-links {
     position: fixed;
@@ -1755,5 +1755,6 @@ a {
   z-index: 0;            
   opacity: 0.75;         
 }
+
 
 
