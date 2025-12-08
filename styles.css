@@ -156,6 +156,10 @@ body {
   border-radius: 999px;
   transition: background var(--transition-fast), color var(--transition-fast), transform 80ms ease-out;
 }
+.nav-links a.hidden {
+    display: none; /* hide em for desktop users! */
+}
+
 
 .nav-links a:hover {
   background: rgba(255, 255, 255, 0.05);
@@ -1749,5 +1753,6 @@ a {
   z-index: 0;            
   opacity: 0.75;         
 }
+
 
 
