@@ -812,6 +812,9 @@ a {
     border-radius: 18px;
   }
 
+  .nav-links a.hidden {
+      display: inline; /* using this so i DONT HAVE TO CODE IT IN FOR F****N mobile
+  }
   .nav-links {
     position: fixed;
     inset: 68px 16px auto;
@@ -1746,4 +1749,5 @@ a {
   z-index: 0;            
   opacity: 0.75;         
 }
+
 
