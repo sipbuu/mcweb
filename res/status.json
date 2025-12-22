@@ -1,11 +1,12 @@
 {
-  "status": "maintenance",
-  "label": "going thru changes",
+  "status": "online",
+  "label": "online for season 1!",
   "playersOnline": 0,
   "maxPlayers": 0,
   "motd": "",
   "snapshot": {
     "season": "season 1",
-    "totalPlayersJoined": 0
+    "totalPlayersJoined": 10
   }
 }
+
