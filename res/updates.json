@@ -20,7 +20,7 @@
       "changes": [
         "Bedrock support at bed.cbhs.online (read cbhs.online/bedrock for more support)..",
         "Added TPA and /home, with a limit of 6 homes!",
-        "World border of 5k currently!",
+        "World border of 5k currently!"
       ]
     },
     {
@@ -44,9 +44,8 @@
         "TPA has been temporarily disabled because of some abuse described by the command.",
         "Fixed glitches that pertained to the nether roof so that you may be able to build gold farms as you need!",
         "Read rules for our rules about chests and griefing!",
-        "New plugins that'll help us detect and pertain to cheating and griefing easier.",
+        "New plugins that'll help us detect and pertain to cheating and griefing easier."
       ]
     }
   ]
 }
-
