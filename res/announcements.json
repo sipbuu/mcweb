@@ -16,30 +16,20 @@
       }
     },
     {
-      "id": "season-1-launch",
-      "title": "Season 1 Launch",
-      "summary": "woohoo!",
-      "body": "Season 1 kicks off our modded server, date is a temporary placeholder. Get ready soon!",
-      "date": "2025-12-25T18:30:00-06:00",
-      "pinned": false,
-      "level": "info",
-      "showOnHomeModal": true
-    },
-    {
-      "id": "voting-open",
-      "title": "Voting Now Open!", 
-      "summary": "Suggest and vote on server features and rules.",
-      "body": "We have opened up voting for server features and rules! Head over to the Vote page to participate and help shape the future of the CBHS Minecraft Server.",
+      "id": "server-open",
+      "title": "The server is open!", 
+      "summary": "Currently vanilla, with modded coming shortly.",
+      "body": "Feel free to come on in, all versions above 1.21.10+ are accepted into the server, alongside bedrock!",
       "date": "2025-12-05T12:00:00-06:00",
       "pinned": true,
       "level": "info",
       "showOnHomeModal": true
     },
     {
-      "id": "username-info",
-      "title": "Dont forget to tell us your Minecraft username!",
-      "summary": "We need your Minecraft username to whitelist you on the server.",
-      "body": "Make sure to provide your Minecraft username when signing up for the server so we can whitelist you! Without it, you won't be able to join and play.",
+      "id": "modded-vote",
+      "title": "Dont forget to vote for what mods you want!",
+      "summary": "We need your feedback for the mods that may be in our server shortly..",
+      "body": "Please give us your feedback for mods since the moddewd version will shortly be coming out soon and we'd love to hear what suggestions you have for us (and for it to also not be bland)",
       "date": "2025-11-05T09:00:00-06:00",
       "pinned": true, 
       "level": "info",
@@ -47,3 +37,4 @@
     }
   ]
 }
+
