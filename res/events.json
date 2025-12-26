@@ -19,11 +19,12 @@
   ],
   "events": [
     {
-      "id": "season-1-launch-party",
-      "title": "Season 1 Launch Party",
-      "date": "2025-12-25T18:30:00-06:00",
-      "description": "Hop on around launch time for a group start and screenshots.",
+      "id": "modded-launch",
+      "title": "Launch for the Modded Server",
+      "date": "2025-12-30T18:30:00-06:00",
+      "description": "Get ready to play modded! (Date is estimation)",
       "type": "event"
     }
   ]
 }
+
