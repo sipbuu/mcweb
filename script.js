@@ -1,6 +1,6 @@
 const RES_BASE = "/res";
 const typewriterPhrases = [
-  "modded survival (and vanilla survival soon) world to have fun in!",
+  "survival (and modded survival soon) world to have fun in!",
   "try not to be a nuisance while playing...",
   "multiple worlds (hopefully coming soon!!) "
 ];
@@ -1660,3 +1660,4 @@ document.addEventListener("DOMContentLoaded", () => {
   setupAccordionInteractions();
    setupIpModal();
 });
+
