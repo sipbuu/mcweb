@@ -10,6 +10,43 @@
         "i've finally designed and launched the website for the server!! i'm really proud of how it turned out and I'm hoping this provides.. some use.. later on.",
         "more later -sipbuu"
       ]
+    },
+    {
+      "id": "server-start",
+      "title": "Server has been started (alongside bedrock support!)",
+      "version": "v1.0",
+      "date": "2025-01-05T18:30:00-06:00",
+      "summary": "Say hello to the server! We are in action",
+      "changes": [
+        "Bedrock support at bed.cbhs.online (read cbhs.online/bedrock for more support)..",
+        "Added TPA and /home, with a limit of 6 homes!",
+        "World border of 5k currently!",
+      ]
+    },
+    {
+      "id": "server-1-1",
+      "title": "Nether Update",
+      "version": "v1.1",
+      "date": "2025-01-05T18:30:00-06:00",
+      "summary": "The nether has been opened, feel free to raid bastions and stuff for better items!",
+      "changes": [
+        "Nether has been opened, you are free to create as many farms as you need!",
+        "New balancing / new commands avaliable!"
+      ]
+    },
+    {
+      "id": "server-1-2",
+      "title": "Patching and fixing..",
+      "version": "v1.2",
+      "date": "2025-01-05T18:30:00-06:00",
+      "summary": "Read below.",
+      "changes": [
+        "TPA has been temporarily disabled because of some abuse described by the command.",
+        "Fixed glitches that pertained to the nether roof so that you may be able to build gold farms as you need!",
+        "Read rules for our rules about chests and griefing!",
+        "New plugins that'll help us detect and pertain to cheating and griefing easier.",
+      ]
     }
   ]
 }
+
