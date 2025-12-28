@@ -19,6 +19,12 @@
   ],
   "events": [
     {
+      "id": "end-launch",
+      "title": "The End will be opened soon",
+      "date": "2025-12-28T18:00:00-06:00",
+      "description": "Get ready to hop into the end!",
+      "type": "event"
+    {
       "id": "modded-launch",
       "title": "Launch for the Modded Server",
       "date": "2025-12-30T18:30:00-06:00",
@@ -27,4 +33,5 @@
     }
   ]
 }
+
 
