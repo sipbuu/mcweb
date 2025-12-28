@@ -21,7 +21,7 @@
       "summary": "Currently vanilla, with modded coming shortly.",
       "body": "Feel free to come on in, all versions above 1.21.10+ are accepted into the server, alongside bedrock!",
       "date": "2025-12-05T12:00:00-06:00",
-      "pinned": true,
+      "pinned": false,
       "level": "info",
       "showOnHomeModal": true
     },
@@ -34,7 +34,18 @@
       "pinned": true, 
       "level": "info",
       "showOnHomeModal": true
+    },
+    {
+      "id": "end-opening",
+      "title": "The end will open at 7PM CST",
+      "summary": "Go on and find your strongholds!",
+      "body": "Be ready to all fight the ender dragon. NOTE: PVP will be off during the end fight!",
+      "date": "2025-12-27T09:00:00-06:00",
+      "pinned": true, 
+      "level": "info",
+      "showOnHomeModal": true
     }
   ]
 }
+
 
